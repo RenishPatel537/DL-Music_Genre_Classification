@@ -1,0 +1,9 @@
+# Common
+node_modules/
+.env
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+*.log

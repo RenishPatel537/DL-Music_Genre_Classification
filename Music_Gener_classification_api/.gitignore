@@ -1,0 +1,15 @@
+# Environments
+.env
+.venv/
+env/
+venv/
+ENV/
+
+# Byte-code files
+__pycache__/
+*.pyc
+
+# IDE-specific files (optional, depends on your IDE)
+.idea/
+.vscode/
+*.swp
