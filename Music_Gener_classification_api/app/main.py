@@ -8,11 +8,7 @@ app = FastAPI(
     version="1.0"
 )
 
-origins = [
-    "http://localhost:5173",   # React / Next.js
-    "http://127.0.0.1:5173",
-    "https://dl-music-genre-classification-1.onrender.com/"
-]
+origins = ["*"]
 
 app.add_middleware(
     CORSMiddleware,
