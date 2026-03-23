@@ -45,11 +45,11 @@ def predict_full_song_overlap(model, audio_path):
     #Convert to tensor
     segments = torch.tensor(segments).unsqueeze(1).float()
 
-    # Detect model type
-    model_name = model.__class__.__name__
+    # # Detect model type
+    # model_name = model.__class__.__name__
 
-    if model_name == "ResNet":
-        segments = segments.repeat(1,3,1,1)
+    # if model_name == "ResNet":
+    #     segments = segments.repeat(1,3,1,1)
 
     # shape → (num_segments,1,128,130)
 
